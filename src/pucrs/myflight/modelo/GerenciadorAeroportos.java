@@ -24,4 +24,12 @@ public class GerenciadorAeroportos {
         }
         return null;
     }
+
+    public String toString() {
+        String aux = "\nCadastro de Clientes\n- - - - - - - - - - -\n";
+        for (Aeroporto a : aeroportos) {
+            aux = aux + a.toString() + "\n";
+        }
+        return aux;
+    }
 }

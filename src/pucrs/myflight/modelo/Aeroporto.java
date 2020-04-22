@@ -11,6 +11,13 @@ public class Aeroporto {
 		this.loc = loc;
 	}
 	
+	public Aeroporto(String codigo, String nome, double latitude, double longitude) {
+		this.codigo = codigo;
+		this.nome = nome;
+		this.loc = new Geo(latitude, longitude);
+	}
+	
+
 	public String getCodigo() {
 		return codigo;
 	}
@@ -22,4 +29,10 @@ public class Aeroporto {
 	public Geo getLocal() {
 		return loc;
 	}
+
+	@Override
+	public String toString() { return nome + "(" + codigo + ")" + "\n";}
+
+	//@Override
+	//public int compareTo(Aeroporto outro) { return nome.compareTo(outro.getLocal())}
 }

@@ -31,4 +31,12 @@ public class GerenciadorAeronaves {
         return null;
     }
 
+    public String toString() {
+        String aux = "\nAeronaves\n- - - - - - - - - - -\n";
+        for (Aeronave a : aeronaves) {
+            aux = aux + a.toString() + "\n";
+        }
+        return aux;
+    }
+
 }
