@@ -13,8 +13,8 @@ public class GerenciadorAeroportos {
         aeroportos.add(aero);
     }
 
-    public ArrayList<Aeronave> listarTodas(){
-        return null;
+    public ArrayList<Aeroporto> listarTodas(){
+        return aeroportos;
     }
 
     public Aeroporto buscarPorCodigo(String cod){
@@ -26,7 +26,7 @@ public class GerenciadorAeroportos {
     }
 
     public String toString() {
-        String aux = "\nCadastro de Clientes\n- - - - - - - - - - -\n";
+        String aux = "\nAeroportos\n- - - - - - - - - - -\n";
         for (Aeroporto a : aeroportos) {
             aux = aux + a.toString() + "\n";
         }

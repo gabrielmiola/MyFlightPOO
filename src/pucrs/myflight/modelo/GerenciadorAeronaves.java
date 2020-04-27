@@ -14,14 +14,8 @@ public class GerenciadorAeronaves {
     }
 
     public ArrayList<Aeronave> listarTodas(){
-        int tamanho = aeronaves.size();
-        ArrayList<Aeronave> aux;
-        for(int i=0;i<tamanho;i++){
-            aux = aeronaves.get(i);
-            return aux;
-        }
-        return null;
-    }
+        return aeronaves;
+    }   
 
     public Aeronave buscarPorCodigo(String cod){
         for(Aeronave a: aeronaves){

@@ -13,8 +13,8 @@ public class GerenciadorCias {
         empresas.add(cia);
     }
 
-    public ArrayList<Aeronave> listarTodas(){
-        return null;
+    public ArrayList<CiaAerea> listarTodas(){
+        return empresas;
     }
 
     public CiaAerea buscarPorCodigo(String cod){
@@ -31,5 +31,13 @@ public class GerenciadorCias {
             return a;
         }
         return null;
+    }
+
+    public String toString() {
+        String aux = "\nCiasAereas\n- - - - - - - - - - -\n";
+        for (CiaAerea a : empresas) {
+            aux = aux + a.toString() + "\n";
+        }
+        return aux;
     }
 }

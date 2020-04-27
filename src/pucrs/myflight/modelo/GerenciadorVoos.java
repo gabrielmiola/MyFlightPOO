@@ -16,7 +16,7 @@ public class GerenciadorVoos {
     }
 
     public ArrayList<Voo> listarTodas(){
-        return null;
+        return voos;
     }
 
     public Voo buscarPorData(final LocalDateTime data){
@@ -25,5 +25,13 @@ public class GerenciadorVoos {
             return a;
         }
         return null;
+    }
+
+    public String toString() {
+        String aux = "\nVoos\n- - - - - - - - - - -\n";
+        for (Voo a : voos) {
+            aux = aux + a.toString() + "\n";
+        }
+        return aux;
     }
 }

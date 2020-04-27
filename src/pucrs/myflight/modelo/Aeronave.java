@@ -22,4 +22,6 @@ public class Aeronave {
 	public int getCapacidade(){
 		return capacidade;
 	}
+
+	public String toString() { return "Codigo: " + codigo + "- Descrição: " + descricao + " - Capacidade: " + capacidade + "\n";}
 }

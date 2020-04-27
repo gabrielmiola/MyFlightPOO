@@ -38,4 +38,6 @@ public class Voo {
 	public void setStatus(Status novo) {
 		this.status = novo;
 	}
+
+	public String toString() { return rota + "- Datahora: " + datahora + " - Duração: " + duracao + " - Status: " + status + "\n";}
 }

@@ -19,7 +19,7 @@ public class App {
 		aeronaves.adicionar(a4);
 
 		String cod = "733";
-		System.out.println("Busca pelo codigo da aeronave" + .buscaPorCodigo());
+		//System.out.println("Busca pelo codigo da aeronave" + GerenciadorAeronaves.buscaPorCodigo());
 
 		System.out.println("\n\n");
 
@@ -70,4 +70,5 @@ public class App {
 		GerenciadorVoos voos = new GerenciadorVoos();
 
 		System.out.println("\n\n");
+}
 }

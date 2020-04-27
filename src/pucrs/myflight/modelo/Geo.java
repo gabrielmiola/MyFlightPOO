@@ -16,4 +16,6 @@ public class Geo {
 	public double getLongitude() {
 		return longitude;
 	}
+
+	public String toString() { return latitude + ":" + longitude + "\n";}
 }

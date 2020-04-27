@@ -13,8 +13,8 @@ public class GerenciadorRotas {
         rotas.add(rota);
     }
 
-    public ArrayList<Aeronave> listarTodas(){
-        return null;
+    public ArrayList<Rota> listarTodas(){
+        return rotas;
     }
 
     public Rota buscarPorOrigem(Aeroporto orig){
@@ -23,5 +23,13 @@ public class GerenciadorRotas {
             return a;
         }
         return null;
+    }
+
+    public String toString() {
+        String aux = "\nRotas\n- - - - - - - - - - -\n";
+        for (Rota a : rotas) {
+            aux = aux + a.toString() + "\n";
+        }
+        return aux;
     }
 }

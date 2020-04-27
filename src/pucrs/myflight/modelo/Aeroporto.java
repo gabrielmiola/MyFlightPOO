@@ -31,8 +31,5 @@ public class Aeroporto {
 	}
 
 	@Override
-	public String toString() { return nome + "(" + codigo + ")" + "\n";}
-
-	//@Override
-	//public int compareTo(Aeroporto outro) { return nome.compareTo(outro.getLocal())}
+	public String toString() { return nome + "(" + codigo + ")" + " : " + loc + "\n";}
 }
