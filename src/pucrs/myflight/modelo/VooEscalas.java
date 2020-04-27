@@ -1,6 +1,5 @@
 package pucrs.myflight.modelo;
 
-import java.util.ArrayList;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
