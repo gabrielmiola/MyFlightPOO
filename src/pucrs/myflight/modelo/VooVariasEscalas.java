@@ -1,15 +1,13 @@
 package pucrs.myflight.modelo;
-
+//classe inutil
 import java.util.ArrayList;
-import java.time.Duration;
-import java.time.LocalDateTime;
 
-public class VooVariasEscalas extends VooEscalas{
+public class VooVariasEscalas{
     private ArrayList<Rota> rotas;
     private Rota rota;
 
-    public VooVariasEscalas (LocalDateTime datahora){
-        super (datahora);
+    public VooVariasEscalas(){
+        //super(datahora)
         rotas = new ArrayList<Rota>();
     }
 

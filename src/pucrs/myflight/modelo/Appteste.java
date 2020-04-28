@@ -1,10 +1,7 @@
-package pucrs.myflight.consoleApp;
+package pucrs.myflight.modelo;
 
-import pucrs.myflight.modelo.*;
-
-public class App {
-
-	public static void main(String[] args) {
+public class Appteste {
+    public static void main(String[] args) {
 		System.out.println("MyFlight project...");
 
 		GerenciadorAeronaves aeronaves = new GerenciadorAeronaves();
@@ -16,7 +13,7 @@ public class App {
 		aeronaves.adicionar(a1);
 		aeronaves.adicionar(a2);
 		aeronaves.adicionar(a3);
-		aeronaves.adicionar(a4);
+        aeronaves.adicionar(a4);
 
 		System.out.println("\n\n");
 
@@ -61,9 +58,6 @@ public class App {
 		rotas.adicionar(r2);
 		rotas.adicionar(r3);
 		rotas.adicionar(r4);
-
-		System.out.println("\n\n");
-		
 
 		System.out.println("\n\n");
 }
